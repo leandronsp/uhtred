@@ -1,4 +1,5 @@
 module.exports = {
   verbose: true,
-  watchman: false
+  watchman: false,
+  modulePaths: ['<rootDir>/src']
 };

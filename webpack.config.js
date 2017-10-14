@@ -12,5 +12,11 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }]
-  }
+  },
+	resolve: {
+		modules: [
+			path.resolve('./src'),
+			path.resolve('node_modules')
+		]
+	}
 };
