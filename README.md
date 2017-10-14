@@ -3,10 +3,11 @@ Uhtred
 
 The frontend (React.js version) for [Marketr](https://sonataxa.tech).
 
-Setup
+Setup & Running locally
 --------
 	$ npm install
 	$ webpack
+  $ webpack-dev-server (runs at localhost:8080)
 
 Tech
 --------
