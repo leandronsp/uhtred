@@ -1,12 +1,9 @@
-import types from '../actions/actionTypes'
+import { combineReducers } from 'redux';
 
-const increment = number => number + 1
-const decrement = number => number > 0 ? number - 1 : number
+import stocks from './stocks';
 
-export default (state = 0, action) => {
-  switch (action.type) {
-    case types.INCREMENT: return increment(state)
-    case types.DECREMENT: return decrement(state)
-    default: return state
-  }
-}
+const reducer = combineReducers({
+  stocks
+});
+
+export default reducer;

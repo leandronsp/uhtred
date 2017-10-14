@@ -8,7 +8,7 @@ Tech
   * ES6
   * Webpack
   * React + Redux
-  * Jest
+  * Jest + Enzyme
 
 Setup & Running locally
 --------
