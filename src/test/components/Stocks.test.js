@@ -10,4 +10,3 @@ it('renders stock list', () => {
   const component = mount(<Stocks {...props} />)
   expect(component.find('ul').text()).toEqual('PETR4')
 })
-

@@ -7,4 +7,3 @@ it('renders stock element', () => {
   const component = shallow(<Stock {...props} />)
   expect(component.find('li').text()).toEqual('PETR4')
 })
-

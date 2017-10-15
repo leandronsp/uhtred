@@ -18,5 +18,10 @@ module.exports = {
 			path.resolve('./src'),
 			path.resolve('node_modules')
 		]
-	}
+	},
+  devServer: {
+    contentBase: 'dist',
+    hot: true,
+    inline: true
+  }
 };
