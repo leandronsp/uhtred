@@ -34,7 +34,8 @@
     "webpack-dev-server": "^2.9.1"
   },
   "scripts": {
-    "test": ""
+    "server:dev": "webpack-dev-server --inline --hot",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
