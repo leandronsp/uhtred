@@ -13,12 +13,12 @@ Tech
 Setup & Running locally
 --------
 	$ npm install
-	$ webpack
-	$ webpack-dev-server (runs at localhost:8080)
+	$ npm run build (webpack)
+	$ npm run server:dev (webpack-dev-server --inline --hot)
 
 Testing
 --------
-	$ jest
+	$ npm run test (jest --watch)
 
 License
 ------------
