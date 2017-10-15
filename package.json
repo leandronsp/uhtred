@@ -40,8 +40,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/leandronsp/uhtred"
   },
-  "author": "",
+  "author": "Leandro Maríngolo, @leandronsp",
   "license": "MIT"
 }
