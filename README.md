@@ -18,7 +18,7 @@ Setup & Running locally
 
 Testing
 --------
-	$ npm run test (jest --watch)
+	$ npm run tdd (jest --watch)
 
 License
 ------------

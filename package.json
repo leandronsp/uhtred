@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "test": "jest --watch",
+    "tdd": "jest --watch",
     "server:dev": "webpack-dev-server --inline --hot"
   },
   "repository": {
