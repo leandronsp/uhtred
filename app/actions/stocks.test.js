@@ -1,5 +1,5 @@
-import * as actions from 'actions/stocks'
-import types from 'actions/actionTypes'
+import * as actions from './stocks'
+import types from './actionTypes'
 
 it('#fetchStocksRequest', () => {
   const expected = { type: types.FETCH_STOCKS_REQUEST }

@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 import * as stockActions from './stocks'
-import config from '../config'
+import config from 'config'
 
 export const fetchStocks = () => {
   return dispatch => {

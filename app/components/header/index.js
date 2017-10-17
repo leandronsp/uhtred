@@ -1,8 +1,8 @@
 import React from 'react'
-import Stock from './Stock'
+import Stock from 'components/stock/index'
 
-const Stocks = ({stocks}) => (
-  <ul>
+const Header = ({stocks}) => (
+  <ul className='header'>
     {stocks.map(stock =>
       <Stock
         key={stock.symbol}
@@ -12,4 +12,4 @@ const Stocks = ({stocks}) => (
   </ul>
 )
 
-export default Stocks
+export default Header

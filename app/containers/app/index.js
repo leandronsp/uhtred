@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import React from 'react'
-import Stocks from '../components/Stocks'
-import Header from '../components/Header'
+import Stocks from 'components/stocks/index'
+import Header from 'components/header/index'
 
 const App = ({stocks}) => (
   <div>

@@ -1,8 +1,8 @@
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import nock from 'nock'
-import * as actions from 'actions/stocks.async'
-import types from 'actions/actionTypes'
+import * as actions from './stocks.async'
+import types from './actionTypes'
 import config from 'config'
 
 const middlewares = [thunk]

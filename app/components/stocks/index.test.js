@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Stocks from 'components/Stocks'
+import Stocks from 'components/stocks/index'
 
 it('renders stock list', () => {
   const props = {

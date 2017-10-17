@@ -1,4 +1,4 @@
-import reducer from 'reducers/stocks'
+import reducer from './stocks'
 import types  from 'actions/actionTypes'
 
 it('returns the default state', () => {
