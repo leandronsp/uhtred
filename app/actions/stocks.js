@@ -11,5 +11,5 @@ export const fetchStocksSuccess = (body) => ({
 
 export const changeCurrentStock = (stock) => ({
   type: types.CHANGE_CURRENT_STOCK,
-  stock: stock
+  stock
 })

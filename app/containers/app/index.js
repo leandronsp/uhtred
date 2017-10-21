@@ -6,7 +6,8 @@ import DrawerLayout from 'layouts/drawer/index'
 
 const mapStateToProps = state => ({
   stocks: state.stocks,
-  currentStock: state.currentStock
+  currentStock: state.currentStock,
+  series: state.series
 })
 
 const mapDispatchToProps = dispatch => ({
