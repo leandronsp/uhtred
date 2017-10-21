@@ -1,19 +1,19 @@
 import { connect } from 'react-redux'
 import React from 'react'
-import Stocks from 'components/stocks/index'
-import Header from 'components/header/index'
-
-const App = ({stocks}) => (
-  <div>
-    <Header stocks={stocks} />
-    <Stocks stocks={stocks} />
-  </div>
-)
+import { bindActionCreators } from 'redux'
+import * as actionCreators from 'actions/stocks'
+import DrawerLayout from 'layouts/drawer/index'
 
 const mapStateToProps = state => ({
-  stocks: state.stocks
+  stocks: state.stocks,
+  currentStock: state.currentStock
+})
+
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(actionCreators, dispatch)
 })
 
 export default connect(
-  mapStateToProps
-)(App)
+  mapStateToProps,
+  mapDispatchToProps
+)(DrawerLayout)

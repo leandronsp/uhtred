@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders stock list 1`] = `
+<div
+  className="DrawerLayout-root-1"
+>
+  <div
+    className="DrawerLayout-appFrame-2"
+  >
+    <header
+      className="MuiPaper-root-16 MuiPaper-shadow4-22 MuiAppBar-root-9 MuiAppBar-positionFixed-10 MuiAppBar-colorPrimary-14 mui-fixed DrawerLayout-appBar-3"
+    >
+      <div
+        className="MuiToolbar-root-43 MuiToolbar-gutters-44"
+      >
+        <h2
+          className="MuiTypography-root-45 MuiTypography-title-51 MuiTypography-colorInherit-64 MuiTypography-noWrap-61"
+        >
+          
+        </h2>
+      </div>
+    </header>
+    <div
+      className="MuiDrawer-docked-69"
+    >
+      <div
+        className="MuiPaper-root-16 MuiPaper-shadow0-18 MuiDrawer-paper-70 DrawerLayout-drawerPaper-4 MuiDrawer-paperAnchorDockedLeft-75"
+      >
+        <div
+          className="DrawerLayout-drawerHeaderMixin-5 DrawerLayout-drawerHeader-6"
+        >
+          <h2
+            className="MuiTypography-root-45 MuiTypography-title-51 MuiTypography-colorPrimary-65 MuiTypography-noWrap-61 DrawerLayout-drawerHeaderTitle-7"
+          >
+            Marketr
+          </h2>
+          <h3
+            className="MuiTypography-root-45 MuiTypography-subheading-52 MuiTypography-colorPrimary-65 MuiTypography-noWrap-61"
+          >
+            About
+          </h3>
+        </div>
+        <hr
+          className="MuiDivider-root-78 MuiDivider-default-79"
+        />
+        <ul
+          className="MuiList-root-83 MuiList-padding-84"
+        >
+          <li
+            className="MuiButtonBase-root-97 MuiListItem-root-87 MuiListItem-gutters-94 MuiListItem-button-95 MuiListItem-default-90"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <div
+              className="MuiListItemText-root-99"
+            >
+              <h3
+                className="MuiTypography-root-45 MuiTypography-subheading-52 MuiListItemText-text-102"
+              >
+                PETR4
+              </h3>
+            </div>
+            <span
+              className="MuiTouchRipple-root-104"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main
+      className="DrawerLayout-content-8"
+    >
+      <p
+        className="MuiTypography-root-45 MuiTypography-body1-54"
+      />
+    </main>
+  </div>
+</div>
+`;
