@@ -5,11 +5,12 @@ import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
 import List, { ListItem, ListItemText } from 'material-ui/List'
 import Tabs, { Tab } from 'material-ui/Tabs'
+import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table'
 import Typography from 'material-ui/Typography'
 import Divider from 'material-ui/Divider'
 import styles from './styles'
 
-const DrawerLayout = ({classes, stocks, currentStock, series, currentSerie, actions}) => {
+const DrawerLayout = ({classes, stocks, currentStock, series, currentSerie, callOptions, actions}) => {
   return (
     <div className={classes.root}>
       <div className={classes.appFrame}>
@@ -49,6 +50,28 @@ const DrawerLayout = ({classes, stocks, currentStock, series, currentSerie, acti
               )}
             </Tabs>
           </AppBar>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Trades</TableCell>
+                <TableCell>Serie</TableCell>
+                <TableCell>Strike</TableCell>
+                <TableCell>Price</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {callOptions.map(callOption => {
+                return (
+                  <TableRow key={callOption.symbol}>
+                    <TableCell>{callOption.trades}</TableCell>
+                    <TableCell>{callOption.symbol}</TableCell>
+                    <TableCell>{callOption.strike}</TableCell>
+                    <TableCell>{callOption.price}</TableCell>
+                  </TableRow>
+                )
+              })}
+            </TableBody>
+          </Table>
         </main>
       </div>
     </div>

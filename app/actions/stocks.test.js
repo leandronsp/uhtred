@@ -11,7 +11,11 @@ it('#fetchStocksSuccess', () => {
   expect(actions.fetchStocksSuccess()).toEqual(expected)
 })
 
-it('#changeCurrentStock', () => {
+it('#changeCurrentStockResume', () => {
   const expected = { type: types.CHANGE_CURRENT_STOCK, stock: { symbol:'CIEL3' }}
-  expect(actions.changeCurrentStock({ symbol: 'CIEL3' })).toEqual(expected)
+  expect(actions.changeCurrentStockResume({ symbol: 'CIEL3' })).toEqual(expected)
+})
+
+it('#changeCurrentStock', () => {
+  // to be implemented
 })

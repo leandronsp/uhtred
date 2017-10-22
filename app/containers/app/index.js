@@ -9,7 +9,8 @@ const mapStateToProps = state => ({
   stocks: state.stocks,
   currentStock: state.currentStock,
   series: state.series,
-  currentSerie: state.currentSerie
+  currentSerie: state.currentSerie,
+  callOptions: state.callOptions
 })
 
 const actionCreators = Object.assign({}, stocksActions, seriesActions)

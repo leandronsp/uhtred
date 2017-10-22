@@ -9,7 +9,11 @@ export const fetchStocks = () => {
 
     return fetch(config.API_ENDPOINT + '/api/stocks')
       .then(response => response.json())
-      .then(json => dispatch(stockActions.fetchStocksSuccess(json)))
-      .then(dispatch(serieActions.fetchSeries()))
+      .then(json =>
+        Promise.all([
+          dispatch(stockActions.fetchStocksSuccess(json)),
+          dispatch(serieActions.fetchSeries())
+        ])
+      )
   }
 }

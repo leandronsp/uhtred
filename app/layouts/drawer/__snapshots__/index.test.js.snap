@@ -155,6 +155,60 @@ exports[`renders stock list 1`] = `
           </div>
         </div>
       </header>
+      <table
+        className="MuiTable-root-137"
+      >
+        <thead
+          className="MuiTableHead-root-138"
+        >
+          <tr
+            className="MuiTableRow-root-139 MuiTableRow-head-140"
+          >
+            <th
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147 MuiTableCell-head-146"
+            >
+              Trades
+            </th>
+            <th
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147 MuiTableCell-head-146"
+            >
+              Serie
+            </th>
+            <th
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147 MuiTableCell-head-146"
+            >
+              Strike
+            </th>
+            <th
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147 MuiTableCell-head-146"
+            >
+              Price
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="MuiTableBody-root-151"
+        >
+          <tr
+            className="MuiTableRow-root-139"
+          >
+            <td
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147"
+            />
+            <td
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147"
+            >
+              PETRB28
+            </td>
+            <td
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147"
+            />
+            <td
+              className="MuiTableCell-root-144 MuiTableCell-paddingDefault-147"
+            />
+          </tr>
+        </tbody>
+      </table>
     </main>
   </div>
 </div>
