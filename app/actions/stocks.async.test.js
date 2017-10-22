@@ -17,9 +17,14 @@ it('#fetchStocks', () => {
     .get('/api/stocks')
     .reply(200, body)
 
+  nock(config.API_ENDPOINT)
+    .get('/api/series')
+    .reply(200, [])
+
   const expected = [
     { type: types.FETCH_STOCKS_REQUEST },
-    { type: types.FETCH_STOCKS_SUCCESS, body: body }
+    { type: types.FETCH_STOCKS_SUCCESS, body: body },
+    { type: types.FETCH_SERIES_SUCCESS, body: [] }
   ]
 
   const store = mockStore()

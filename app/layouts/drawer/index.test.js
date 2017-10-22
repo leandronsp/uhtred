@@ -4,10 +4,13 @@ import DrawerLayout from 'layouts/drawer/index'
 import renderer from 'react-test-renderer'
 
 it('renders stock list', () => {
-  const stocks = [{ symbol: 'PETR4' }]
+  const state = {
+    stocks: [{ symbol: 'PETR4' }],
+    series: [{ symbol: 'C' }]
+  }
 
   const tree = renderer.create(
-    <DrawerLayout stocks={stocks} />
+    <DrawerLayout stocks={state.stocks} series={state.series} />
   ).toJSON()
 
   expect(tree).toMatchSnapshot()

@@ -4,11 +4,12 @@ import Drawer from 'material-ui/Drawer'
 import AppBar from 'material-ui/AppBar'
 import Toolbar from 'material-ui/Toolbar'
 import List, { ListItem, ListItemText } from 'material-ui/List'
+import Tabs, { Tab } from 'material-ui/Tabs'
 import Typography from 'material-ui/Typography'
 import Divider from 'material-ui/Divider'
 import styles from './styles'
 
-const DrawerLayout = ({classes, stocks, currentStock, actions}) => {
+const DrawerLayout = ({classes, stocks, currentStock, series, currentSerie, actions}) => {
   return (
     <div className={classes.root}>
       <div className={classes.appFrame}>
@@ -41,9 +42,13 @@ const DrawerLayout = ({classes, stocks, currentStock, actions}) => {
           </List>
         </Drawer>
         <main className={classes.content}>
-          <Typography>
-
-          </Typography>
+          <AppBar position="static">
+            <Tabs value={currentSerie ? currentSerie.index : 0}>
+              {series.map(serie =>
+                <Tab key={serie.symbol} label={serie.symbol} onClick={() => actions.changeCurrentSerie(serie)}/>
+              )}
+            </Tabs>
+          </AppBar>
         </main>
       </div>
     </div>

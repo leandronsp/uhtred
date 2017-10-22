@@ -82,9 +82,79 @@ exports[`renders stock list 1`] = `
     <main
       className="DrawerLayout-content-8"
     >
-      <p
-        className="MuiTypography-root-45 MuiTypography-body1-54"
-      />
+      <header
+        className="MuiPaper-root-16 MuiPaper-shadow4-22 MuiAppBar-root-9 MuiAppBar-positionStatic-12 MuiAppBar-colorPrimary-14"
+      >
+        <div
+          className="MuiTabs-root-111"
+        >
+          <div
+            className="MuiTabs-flexContainer-112"
+          >
+            <div
+              className="MuiTabs-scrollingContainer-113 MuiTabs-fixed-114"
+              onScroll={[Function]}
+              role="tablist"
+              style={
+                Object {
+                  "marginBottom": 0,
+                }
+              }
+            >
+              <div
+                className="MuiTabs-flexContainer-112"
+              >
+                <button
+                  aria-selected={true}
+                  className="MuiButtonBase-root-97 MuiTab-root-118 MuiTab-rootInherit-126 MuiTab-rootInheritSelected-127"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  role="tab"
+                  style={undefined}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="MuiTab-wrapper-130"
+                  >
+                    <div
+                      className="MuiTab-labelContainer-131"
+                    >
+                      <span
+                        className="MuiTab-label-132"
+                      >
+                        C
+                      </span>
+                    </div>
+                  </span>
+                  <span
+                    className="MuiTouchRipple-root-104"
+                  />
+                </button>
+              </div>
+              <div
+                className="MuiTabIndicator-root-134 MuiTabIndicator-colorAccent-135"
+                style={
+                  Object {
+                    "left": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </header>
     </main>
   </div>
 </div>

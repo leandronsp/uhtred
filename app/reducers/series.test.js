@@ -11,5 +11,9 @@ it('returns the new state for FETCH_SERIES_SUCCESS', () => {
     body: [{ symbol: 'B' }, { symbol: 'C' }]
   }
 
-  expect(reducer([{ symbol: 'A' }], action)).toEqual(action.body)
+  const expected = [
+    { symbol: 'B', index: 0 }, { symbol: 'C', index: 1 }
+  ]
+
+  expect(reducer([{ symbol: 'A' }], action)).toEqual(expected)
 })
