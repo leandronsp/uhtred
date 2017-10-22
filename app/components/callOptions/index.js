@@ -5,7 +5,7 @@ import styles from './styles'
 
 const CallOptions = ({ callOptions, classes }) => {
   return (
-    <Table>
+    <Table className={classes.table}>
       <TableHead>
         <TableRow>
           <TableCell>Trades</TableCell>
