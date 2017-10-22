@@ -8,46 +8,46 @@ exports[`renders stock list 1`] = `
     className="DrawerLayout-appFrame-2"
   >
     <header
-      className="MuiPaper-root-16 MuiPaper-shadow4-22 MuiAppBar-root-9 MuiAppBar-positionFixed-10 MuiAppBar-colorPrimary-14 mui-fixed DrawerLayout-appBar-3"
+      className="MuiPaper-root-11 MuiPaper-shadow4-17 MuiAppBar-root-4 MuiAppBar-positionFixed-5 MuiAppBar-colorPrimary-9 mui-fixed HeaderToolbar-headerToolbar-3"
     >
       <div
-        className="MuiToolbar-root-43 MuiToolbar-gutters-44"
+        className="MuiToolbar-root-38 MuiToolbar-gutters-39"
       >
         <h2
-          className="MuiTypography-root-45 MuiTypography-title-51 MuiTypography-colorInherit-64 MuiTypography-noWrap-61"
+          className="MuiTypography-root-40 MuiTypography-title-46 MuiTypography-colorInherit-59 MuiTypography-noWrap-56"
         >
           
         </h2>
       </div>
     </header>
     <div
-      className="MuiDrawer-docked-69"
+      className="MuiDrawer-docked-65"
     >
       <div
-        className="MuiPaper-root-16 MuiPaper-shadow0-18 MuiDrawer-paper-70 DrawerLayout-drawerPaper-4 MuiDrawer-paperAnchorDockedLeft-75"
+        className="MuiPaper-root-11 MuiPaper-shadow0-13 MuiDrawer-paper-66 Sidebar-drawerPaper-64 MuiDrawer-paperAnchorDockedLeft-71"
       >
         <div
-          className="DrawerLayout-drawerHeaderMixin-5 DrawerLayout-drawerHeader-6"
+          className="Brand-drawerHeaderMixin-74 Brand-drawerHeader-75"
         >
           <h2
-            className="MuiTypography-root-45 MuiTypography-title-51 MuiTypography-colorPrimary-65 MuiTypography-noWrap-61 DrawerLayout-drawerHeaderTitle-7"
+            className="MuiTypography-root-40 MuiTypography-title-46 MuiTypography-colorPrimary-60 MuiTypography-noWrap-56 Brand-drawerHeaderTitle-76"
           >
             Marketr
           </h2>
           <h3
-            className="MuiTypography-root-45 MuiTypography-subheading-52 MuiTypography-colorPrimary-65 MuiTypography-noWrap-61"
+            className="MuiTypography-root-40 MuiTypography-subheading-47 MuiTypography-colorPrimary-60 MuiTypography-noWrap-56"
           >
             About
           </h3>
         </div>
         <hr
-          className="MuiDivider-root-78 MuiDivider-default-79"
+          className="MuiDivider-root-77 MuiDivider-default-78"
         />
         <ul
-          className="MuiList-root-83 MuiList-padding-84"
+          className="MuiList-root-82 MuiList-padding-83"
         >
           <li
-            className="MuiButtonBase-root-97 MuiListItem-root-87 MuiListItem-gutters-94 MuiListItem-button-95 MuiListItem-default-90"
+            className="MuiButtonBase-root-96 MuiListItem-root-86 MuiListItem-gutters-93 MuiListItem-button-94 MuiListItem-default-89"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -64,26 +64,26 @@ exports[`renders stock list 1`] = `
             tabIndex={0}
           >
             <div
-              className="MuiListItemText-root-99"
+              className="MuiListItemText-root-98"
             >
               <h3
-                className="MuiTypography-root-45 MuiTypography-subheading-52 MuiListItemText-text-102"
+                className="MuiTypography-root-40 MuiTypography-subheading-47 MuiListItemText-text-101"
               >
                 PETR4
               </h3>
             </div>
             <span
-              className="MuiTouchRipple-root-104"
+              className="MuiTouchRipple-root-103"
             />
           </li>
         </ul>
       </div>
     </div>
     <main
-      className="DrawerLayout-content-8"
+      className="Main-content-110"
     >
       <header
-        className="MuiPaper-root-16 MuiPaper-shadow4-22 MuiAppBar-root-9 MuiAppBar-positionStatic-12 MuiAppBar-colorPrimary-14"
+        className="MuiPaper-root-11 MuiPaper-shadow4-17 MuiAppBar-root-4 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-9"
       >
         <div
           className="MuiTabs-root-111"
@@ -106,7 +106,7 @@ exports[`renders stock list 1`] = `
               >
                 <button
                   aria-selected={true}
-                  className="MuiButtonBase-root-97 MuiTab-root-118 MuiTab-rootInherit-126 MuiTab-rootInheritSelected-127"
+                  className="MuiButtonBase-root-96 MuiTab-root-118 MuiTab-rootInherit-126 MuiTab-rootInheritSelected-127"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -138,7 +138,7 @@ exports[`renders stock list 1`] = `
                     </div>
                   </span>
                   <span
-                    className="MuiTouchRipple-root-104"
+                    className="MuiTouchRipple-root-103"
                   />
                 </button>
               </div>

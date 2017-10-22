@@ -6,11 +6,11 @@ import * as seriesActions from 'actions/series'
 import DrawerLayout from 'layouts/drawer/index'
 
 const mapStateToProps = state => ({
-  stocks: state.stocks,
+  stocks:       state.stocks,
   currentStock: state.currentStock,
-  series: state.series,
+  series:       state.series,
   currentSerie: state.currentSerie,
-  callOptions: state.callOptions
+  callOptions:  state.callOptions
 })
 
 const actionCreators = Object.assign({}, stocksActions, seriesActions)
