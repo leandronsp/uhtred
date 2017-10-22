@@ -3,7 +3,7 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import * as stocksActions from 'actions/stocks'
 import * as seriesActions from 'actions/series'
-import DrawerLayout from 'layouts/drawer/index'
+import AppLayout from 'layouts/app/index'
 
 const mapStateToProps = state => ({
   stocks:       state.stocks,
@@ -22,4 +22,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(DrawerLayout)
+)(AppLayout)

@@ -5,7 +5,7 @@ import Sidebar from 'components/sidebar/index'
 import Main from 'components/main/index'
 import styles from './styles'
 
-const DrawerLayout = (props) => {
+const AppLayout = (props) => {
   const {classes, stocks, series, callOptions, currentStock, currentSerie, actions} = props
 
   return (
@@ -19,4 +19,4 @@ const DrawerLayout = (props) => {
   );
 }
 
-export default withStyles(styles)(DrawerLayout);
+export default withStyles(styles)(AppLayout);

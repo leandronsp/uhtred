@@ -2,10 +2,10 @@
 
 exports[`renders stock list 1`] = `
 <div
-  className="DrawerLayout-root-1"
+  className="AppLayout-root-1"
 >
   <div
-    className="DrawerLayout-appFrame-2"
+    className="AppLayout-appFrame-2"
   >
     <header
       className="MuiPaper-root-11 MuiPaper-shadow4-17 MuiAppBar-root-4 MuiAppBar-positionFixed-5 MuiAppBar-colorPrimary-9 mui-fixed HeaderToolbar-headerToolbar-3"
