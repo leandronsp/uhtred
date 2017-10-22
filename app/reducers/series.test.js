@@ -17,3 +17,16 @@ it('returns the new state for FETCH_SERIES_SUCCESS', () => {
 
   expect(reducer([{ symbol: 'A' }], action)).toEqual(expected)
 })
+
+it('filters only `callOption` types for FETCH_SERIES_SUCCESS', () => {
+  const action = {
+    type: types.FETCH_SERIES_SUCCESS,
+    body: [{ symbol: 'B' }, { symbol: 'C' }, { symbol: 'P' }]
+  }
+
+  const expected = [
+    { symbol: 'B', index: 0 }, { symbol: 'C', index: 1 }
+  ]
+
+  expect(reducer([{ symbol: 'A' }], action)).toEqual(expected)
+})
