@@ -8,10 +8,6 @@ export const fetchCallOptions = () => {
 
     return fetch(config.API_ENDPOINT + '/api/stocks/' + currentStock.symbol + '/calls/evaluated?serie=' + currentSerie.symbol + '&capital=' + capital)
       .then(response => response.json())
-      .then(json =>
-        Promise.all([
-          dispatch(callOptionsActions.fetchCallOptionsSuccess(json))
-        ])
-      )
+      .then(json => dispatch(callOptionsActions.fetchCallOptionsSuccess(json)))
   }
 }

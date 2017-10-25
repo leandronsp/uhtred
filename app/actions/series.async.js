@@ -7,11 +7,9 @@ export const fetchSeries = () => {
   return dispatch => {
     return fetch(config.API_ENDPOINT + '/api/series')
       .then(response => response.json())
-      .then(json =>
-        Promise.all([
-          dispatch(serieActions.fetchSeriesSuccess(json)),
-          dispatch(callOptionActions.fetchCallOptions())
-        ])
-      )
+      .then(json => {
+        dispatch(serieActions.fetchSeriesSuccess(json))
+        dispatch(callOptionActions.fetchCallOptions())
+      })
   }
 }

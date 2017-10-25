@@ -228,6 +228,56 @@ exports[`renders stock list 1`] = `
             >
               Price
             </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Quantity
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              STOP
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Capital
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Net profit
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Rate
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Annual Rate
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Balance
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Rating
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Score
+            </th>
+            <th
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179 MuiTableCell-head-178"
+            >
+              Last update
+            </th>
           </tr>
         </thead>
         <tbody
@@ -244,6 +294,36 @@ exports[`renders stock list 1`] = `
             >
               PETRB28
             </td>
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
+            <td
+              className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
+            />
             <td
               className="MuiTableCell-root-176 MuiTableCell-paddingDefault-179"
             />

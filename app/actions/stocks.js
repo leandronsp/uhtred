@@ -17,9 +17,7 @@ export const changeCurrentStockResume = (stock) => ({
 
 export const changeCurrentStock = (stock) => {
   return dispatch => {
-    return Promise.all([
-      dispatch(changeCurrentStockResume(stock)),
-      dispatch(callOptionActions.fetchCallOptions())
-    ])
+    dispatch(changeCurrentStockResume(stock))
+    dispatch(callOptionActions.fetchCallOptions())
   }
 }

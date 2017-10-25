@@ -12,9 +12,7 @@ export const changeCapital = (capital) => {
   }
 
   return dispatch => {
-    return Promise.all([
-      dispatch(changeCapitalResume(capital)),
-      dispatch(callOptionActions.fetchCallOptions())
-    ])
+    dispatch(changeCapitalResume(capital))
+    dispatch(callOptionActions.fetchCallOptions())
   }
 }

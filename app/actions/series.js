@@ -13,9 +13,7 @@ export const changeCurrentSerieResume = (serie) => ({
 
 export const changeCurrentSerie = (serie) => {
   return dispatch => {
-    return Promise.all([
-      dispatch(changeCurrentSerieResume(serie)),
-      dispatch(callOptionActions.fetchCallOptions())
-    ])
+    dispatch(changeCurrentSerieResume(serie))
+    dispatch(callOptionActions.fetchCallOptions())
   }
 }
