@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 import rootReducer from './reducers'
-import * as actions from './actions/stocks.async'
+import * as stockActions from './actions/stocks'
 
 const configureStore = () => {
   const middlewares = [thunk, logger]
@@ -15,7 +15,7 @@ const configureStore = () => {
     // do something with state
   })
 
-  store.dispatch(actions.fetchStocks())
+  store.dispatch(stockActions.fetchStocks())
   return store
 }
 

@@ -1,5 +1,5 @@
 import types from './actionTypes'
-import * as callOptionActions from './callOptions.async'
+import * as callOptionActions from './callOptions'
 
 export const changeCapitalResume = (capital) => ({
   type: types.CHANGE_CAPITAL,
