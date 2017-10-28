@@ -6,42 +6,65 @@ import thunk from 'redux-thunk'
 import nock from 'nock'
 import config from 'config'
 
-const middlewares = [thunk]
-const mockStore = configureMockStore(middlewares)
-
 it('#fetchSeriesSuccess', () => {
   const expected = { type: types.FETCH_SERIES_SUCCESS, body: 'test' }
   expect(actions.fetchSeriesSuccess('test')).toEqual(expected)
 })
 
-it('#fetchSeries', () => {
-  const body = [
-    { symbol: 'B' },
-    { symbol: 'C' }
-  ]
+describe('with dispatch', () => {
+  const middlewares = [thunk]
+  const mockStore = configureMockStore(middlewares)
 
-  nock(config.API_ENDPOINT)
-    .get('/api/series')
-    .reply(200, body)
+  let store = undefined
 
-  nock(config.API_ENDPOINT)
-    .get('/api/stocks/PETR4/calls/evaluated?serie=B&capital=10000')
-    .reply(200, [])
+  beforeEach(() => {
+    store = mockStore(
+      {
+        currentStock: { symbol: 'PETR4' },
+        currentSerie: { symbol: 'B' },
+        capital: 10000
+      }
+    )
+  })
 
-  const store = mockStore(
-    {
-      currentStock: { symbol: 'PETR4' },
-      currentSerie: { symbol: 'B' },
-      capital: 10000
-    }
-  )
+  it('#fetchSeries', () => {
+    const body = [
+      { symbol: 'B' },
+      { symbol: 'C' }
+    ]
 
-  const expected = [
-    { type: types.FETCH_SERIES_SUCCESS, body: body },
-    { type: types.FETCH_CALL_OPTIONS_SUCCESS, body: [] }
-  ]
+    nock(config.API_ENDPOINT)
+      .get('/api/series')
+      .reply(200, body)
 
-  return store.dispatch(actions.fetchSeries()).then(() => {
-    expect(store.getActions()).toEqual(expected)
+    nock(config.API_ENDPOINT)
+      .get('/api/stocks/PETR4/calls/evaluated?serie=B&capital=10000')
+      .reply(200, [])
+
+    const expected = [
+      { type: types.FETCH_SERIES_SUCCESS, body: body },
+      { type: types.FETCH_CALL_OPTIONS_SUCCESS, body: [] }
+    ]
+
+    return store.dispatch(actions.fetchSeries()).then(() => {
+      expect(store.getActions()).toEqual(expected)
+    })
+  })
+
+  it('#changeCurrentSerie', () => {
+    const serie = { symbol: 'Z' }
+
+    nock(config.API_ENDPOINT)
+      .get('/api/stocks/PETR4/calls/evaluated?serie=B&capital=10000')
+      .reply(200, [])
+
+    const expected = [
+      { type: types.CHANGE_CURRENT_SERIE, serie: serie },
+      { type: types.FETCH_CALL_OPTIONS_SUCCESS, body: [] }
+    ]
+
+    store.dispatch(actions.changeCurrentSerie(serie)).then(() => {
+      expect(store.getActions()).toEqual(expected)
+    })
   })
 })
