@@ -42,7 +42,8 @@ it('#fetchStocks', () => {
   const expected = [
     { type: types.FETCH_STOCKS_REQUEST },
     { type: types.FETCH_STOCKS_SUCCESS, body: body },
-    { type: types.FETCH_SERIES_SUCCESS, body: [] }
+    { type: types.FETCH_SERIES_SUCCESS, body: [] },
+    { type: types.FETCH_CALL_OPTIONS_SUCCESS, body: [] }
   ]
 
   const store = mockStore(

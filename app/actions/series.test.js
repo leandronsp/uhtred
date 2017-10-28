@@ -37,7 +37,8 @@ it('#fetchSeries', () => {
   )
 
   const expected = [
-    { type: types.FETCH_SERIES_SUCCESS, body: body }
+    { type: types.FETCH_SERIES_SUCCESS, body: body },
+    { type: types.FETCH_CALL_OPTIONS_SUCCESS, body: [] }
   ]
 
   return store.dispatch(actions.fetchSeries()).then(() => {

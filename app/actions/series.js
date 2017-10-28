@@ -15,8 +15,10 @@ export const changeCurrentSerieResume = (serie) => ({
 
 export const changeCurrentSerie = (serie) => {
   return dispatch => {
-    dispatch(changeCurrentSerieResume(serie))
-    dispatch(callOptionActions.fetchCallOptions())
+    Promise.all([
+      dispatch(changeCurrentSerieResume(serie)),
+      dispatch(callOptionActions.fetchCallOptions())
+    ])
   }
 }
 
@@ -24,9 +26,11 @@ export const fetchSeries = () => {
   return dispatch => {
     return fetch(config.API_ENDPOINT + '/api/series')
       .then(response => response.json())
-      .then(json => {
-        dispatch(fetchSeriesSuccess(json))
-        dispatch(callOptionActions.fetchCallOptions())
-      })
+      .then(json =>
+        Promise.all([
+          dispatch(fetchSeriesSuccess(json)),
+          dispatch(callOptionActions.fetchCallOptions())
+        ])
+      )
   }
 }

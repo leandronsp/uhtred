@@ -21,8 +21,10 @@ export const changeCurrentStockResume = (stock) => ({
 
 export const changeCurrentStock = (stock) => {
   return dispatch => {
-    dispatch(changeCurrentStockResume(stock))
-    dispatch(callOptionActions.fetchCallOptions())
+    Promise.all([
+      dispatch(changeCurrentStockResume(stock)),
+      dispatch(callOptionActions.fetchCallOptions())
+    ])
   }
 }
 
@@ -32,9 +34,11 @@ export const fetchStocks = () => {
 
     return fetch(config.API_ENDPOINT + '/api/stocks')
       .then(response => response.json())
-      .then(json => {
-        dispatch(fetchStocksSuccess(json))
-        dispatch(serieActions.fetchSeries())
-     })
+      .then(json =>
+        Promise.all([
+          dispatch(fetchStocksSuccess(json)),
+          dispatch(serieActions.fetchSeries())
+        ])
+     )
   }
 }
