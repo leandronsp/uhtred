@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import App from 'containers/app/index'
+import App from 'components/app/index'
 
 const Root = ({ store }) => (
   <Provider store={store}>
