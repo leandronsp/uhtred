@@ -1,18 +1,18 @@
 import React from 'react'
-import { withStyles } from 'material-ui/styles'
-import List, { ListItem, ListItemText } from 'material-ui/List'
-import styles from './styles'
 
-const Stocks = ({stocks, actions, classes}) => {
+const Stocks = ({stocks, actions}) => {
   return (
-    <List>
+    <ul>
       {stocks.map(stock =>
-        <ListItem key={stock.symbol} onClick={() => actions.changeCurrentStock(stock)} button>
-          <ListItemText primary={stock.symbol} />
-        </ListItem>
+        <li key={stock.symbol}>
+          <a
+            href='javascript:void(0)'
+            onClick={() => actions.changeCurrentStock(stock)}>{stock.symbol}
+          </a>
+        </li>
       )}
-    </List>
-  );
+    </ul>
+  )
 }
 
-export default withStyles(styles)(Stocks);
+export default Stocks

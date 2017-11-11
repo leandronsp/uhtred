@@ -1,24 +1,21 @@
 import React from 'react'
-import { withStyles } from 'material-ui/styles'
-import TextField from 'material-ui/TextField';
-import styles from './styles'
 
-const Capital = ({capital, actions, classes}) => {
+const Capital = ({capital, actions}) => {
   const changeCapital = () => event => {
     actions.changeCapital(event.target.value)
   }
 
   return (
-    <form className={classes.capital} noValidate autoComplete='off'>
-      <TextField
+    <form autoComplete='off'>
+      <input
+        type='text'
         id='capital'
         label='How much are you up to invest?'
         value={capital}
-        className={classes.input}
         onChange={changeCapital()}
       />
     </form>
   );
 }
 
-export default withStyles(styles)(Capital);
+export default Capital

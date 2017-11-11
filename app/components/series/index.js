@@ -1,19 +1,18 @@
 import React from 'react'
-import { withStyles } from 'material-ui/styles'
-import AppBar from 'material-ui/AppBar'
-import Tabs, { Tab } from 'material-ui/Tabs'
-import styles from './styles'
 
-const Series = ({series, currentSerie, classes, actions}) => {
+const Series = ({series, currentSerie, actions}) => {
   return (
-    <AppBar position="static">
-      <Tabs value={currentSerie ? currentSerie.index : 0}>
-        {series.map(serie =>
-          <Tab key={serie.symbol} label={serie.symbol} onClick={() => actions.changeCurrentSerie(serie)}/>
-        )}
-      </Tabs>
-    </AppBar>
-  );
+    <ul>
+      {series.map(serie =>
+        <li key={serie.symbol}>
+          <a
+            href='javascript:void(0)'
+            onClick={() => actions.changeCurrentSerie(serie)}>{serie.symbol}
+          </a>
+        </li>
+      )}
+    </ul>
+  )
 }
 
-export default withStyles(styles)(Series);
+export default Series

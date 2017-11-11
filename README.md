@@ -20,7 +20,6 @@ Cutting Edge Stack (As of October 15th 2017')
   * Redux 3.7
   * Jest 21
   * Enzyme 3.1
-  * [Material-UI Next](https://material-ui-next.com) (v1.1.0-beta.16, more cutting edge impossible)
 
 Setup & Running locally
 --------

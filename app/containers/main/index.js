@@ -5,8 +5,6 @@ import * as actions from 'actions/series'
 
 import Series from 'components/series/index'
 import CallOptions from 'components/callOptions/index'
-import { withStyles } from 'material-ui/styles'
-import styles from './styles'
 
 const mapStateToProps = state => ({
   currentSerie: state.currentSerie,
@@ -20,16 +18,16 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actionCreators, dispatch)
 })
 
-const Main = ({ series, callOptions, currentSerie, actions, classes }) => {
+const Main = ({ series, callOptions, currentSerie, actions }) => {
   return (
-    <main className={classes.content}>
+    <div>
       <Series series={series} currentSerie={currentSerie} actions={actions} />
       <CallOptions callOptions={callOptions} />
-    </main>
-  );
+    </div>
+  )
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(Main))
+)(Main)
