@@ -17,8 +17,8 @@ const CallOptions = ({ callOptions }) => {
           <td>Annual Rate</td>
           <td>Balance</td>
           <td>Rating</td>
-          <td>Score</td>
           <td>Last update</td>
+          <td>Score</td>
         </tr>
       </thead>
       <tbody>
@@ -37,8 +37,8 @@ const CallOptions = ({ callOptions }) => {
               <td>{callOption.annual_rate}</td>
               <td>{callOption.balance}</td>
               <td>{callOption.rating}</td>
-              <td>{callOption.score}</td>
               <td>{callOption.last_update}</td>
+              <td>{callOption.score}</td>
             </tr>
           )
         })}

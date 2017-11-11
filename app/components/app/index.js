@@ -1,13 +1,11 @@
 import React from 'react'
-import HeaderToolbar from 'containers/headerToolbar/index'
-import Sidebar from 'containers/sidebar/index'
+import Header from 'containers/header/index'
 import Main from 'containers/main/index'
 
 const App = () => {
   return (
     <div>
-      <HeaderToolbar />
-      <Sidebar />
+      <Header />
       <Main />
     </div>
   )
