@@ -1,0 +1,93 @@
+table.callOptions {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+table.callOptions thead {
+  font-weight: 600;
+  font-size: 16px;
+  color: #A9A9A9;
+}
+table.callOptions thead tr td {
+  padding: 8px;
+}
+table.callOptions tbody {
+}
+table.callOptions tbody tr {
+}
+table.callOptions tbody tr:hover {
+  background-color: #F5F5F5;
+}
+table.callOptions tbody tr.rating-A {
+  background-color: rgba(217,207,104, 0.4);
+}
+table.callOptions tbody tr.rating-A td.rate {
+  background-color: rgba(51,122,183, 0.1);
+}
+table.callOptions tbody tr.rating-A td.rating {
+  color: rgba(76,147,76, 0.8);
+}
+table.callOptions tbody tr.rating-B {
+  background-color: rgba(51,122,183, 0.2);
+}
+table.callOptions tbody tr.rating-B td.rate {
+  background-color: rgba(51,122,183, 0.1);
+}
+table.callOptions tbody tr.rating-B td.rating {
+  color: rgba(76,147,76, 0.8);
+}
+table.callOptions tbody tr.rating-C {
+  background-color: rgba(51,122,183, 0.1);
+}
+table.callOptions tbody tr.rating-C td.rate {
+  background-color: rgba(51,122,183, 0.1);
+}
+table.callOptions tbody tr.rating-C td.rating {
+  color: rgba(51,122,183, 0.8);
+}
+table.callOptions tbody tr.rating-D {
+  opacity: 0.7;
+}
+table.callOptions tbody tr.rating-D td.rating {
+  color: rgba(230,31,0, 0.6);
+}
+table.callOptions tbody tr.rating-E {
+  opacity: 0.5;
+}
+table.callOptions tbody tr.rating-E td.rating {
+  color: rgba(230,31,0, 0.6);
+}
+table.callOptions tbody tr:hover {
+  background-color: #FFF;
+  opacity: 1;
+}
+table.callOptions tbody tr td {
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+  border-top: 1px solid rgba(51,122,183, 0.1);
+  padding: 8px;
+}
+table.callOptions tbody tr td.stop-loss {
+  color: rgba(230,31,0, 0.5);
+}
+table.callOptions tbody tr td.net-profit {
+  color: #4C934C;
+  font-weight: 600;
+}
+table.callOptions tbody tr td.price {
+  color: rgba(51,122,183, 0.8);
+}
+table.callOptions tbody tr td.rate {
+  color: #337ab7;
+}
+table.callOptions tbody tr td.balance {
+  color: rgba(230,31,0, 0.6);
+}
+table.callOptions tbody tr td.balance i {
+  font-size: 20px;
+  vertical-align: -22%;
+  margin-right: 3px;
+}

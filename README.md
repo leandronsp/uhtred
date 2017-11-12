@@ -9,7 +9,7 @@ and brings all the needed information for trading, including a top-feature calle
 evaluated based on Artificial Intelligence and are the main purpose of this product because it achieves
 transparency, speed and accuracy while choosing the best assets to invest money.
 
-![Screen 2](screenshots/screen-2.png)
+![Screen 1](screenshots/screen-1.png)
 
 Cutting Edge Stack (As of October 15th 2017')
 --------
@@ -20,6 +20,10 @@ Cutting Edge Stack (As of October 15th 2017')
   * Redux 3.7
   * Jest 21
   * Enzyme 3.1
+
+Screenshots
+-----------
+![Screen 2](screenshots/screen-2.png)
 
 Setup & Running locally
 --------

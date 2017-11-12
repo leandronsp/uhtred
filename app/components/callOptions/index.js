@@ -1,8 +1,9 @@
 import React from 'react'
+import './styles.css'
 
 const CallOptions = ({ callOptions }) => {
   return (
-    <table>
+    <table className='callOptions'>
       <thead>
         <tr>
           <td>Trades</td>
@@ -24,21 +25,24 @@ const CallOptions = ({ callOptions }) => {
       <tbody>
         {callOptions.map(callOption => {
           return (
-            <tr key={callOption.symbol}>
+            <tr key={callOption.symbol} className={'rating-' + callOption.rating}>
               <td>{callOption.trades}</td>
               <td>{callOption.symbol}</td>
               <td>{callOption.strike}</td>
-              <td>{callOption.price}</td>
+              <td className='price'>{callOption.price}</td>
               <td>{callOption.quantity}</td>
-              <td>{callOption.stop_loss}</td>
+              <td className='stop-loss'>{callOption.stop_loss}</td>
               <td>{callOption.capital}</td>
-              <td>{callOption.net_profit}</td>
-              <td>{callOption.rate}</td>
-              <td>{callOption.annual_rate}</td>
-              <td>{callOption.balance}</td>
-              <td>{callOption.rating}</td>
+              <td className='net-profit'>{callOption.net_profit}</td>
+              <td className='rate'>{callOption.rate}%</td>
+              <td>{callOption.annual_rate}%</td>
+              <td className='balance'>
+                <i className='material-icons'>arrow_downward</i>
+                {callOption.balance}%
+              </td>
+              <td className='rating'>{callOption.rating}</td>
               <td>{callOption.last_update}</td>
-              <td>{callOption.score}</td>
+              <td className='score'>{callOption.score}</td>
             </tr>
           )
         })}
