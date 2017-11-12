@@ -15,7 +15,7 @@ Cutting Edge Stack (As of October 15th 2017')
 --------
   * ES6
   * Webpack 3.7
-  * npm@5.5 ([Yarn killer?](https://medium.com/netscape/npm-5-yarn-killer-ba69737b24d0))
+  * npm@5.5
   * React 16
   * Redux 3.7
   * Jest 21
