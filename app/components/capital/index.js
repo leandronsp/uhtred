@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.css'
 
 const Capital = ({capital, actions}) => {
   const changeCapital = () => event => {
@@ -8,9 +9,10 @@ const Capital = ({capital, actions}) => {
   return (
     <form autoComplete='off'>
       <input
+        className='capital'
         type='text'
         id='capital'
-        label='How much are you up to invest?'
+        placeholder='How much are you up to invest?'
         value={capital}
         onChange={changeCapital()}
       />

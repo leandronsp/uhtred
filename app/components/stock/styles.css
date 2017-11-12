@@ -1,0 +1,32 @@
+.stock h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.stock h4 {
+  margin: 0;
+  display: inline-block;
+  font-size: 24px;
+  color: #ADADAD;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.stock span {
+  color: rgba(51, 122, 183, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+}
+.stock span.positive {
+  color: #4C934C;
+}
+.stock span.negative {
+  color: #e68383;
+}
+.stock span.vh63 {
+  margin-left: 20px;
+}
+.stock span i {
+  vertical-align: -10%;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 3px;
+}

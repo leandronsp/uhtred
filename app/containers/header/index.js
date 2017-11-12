@@ -7,17 +7,23 @@ import Stocks from 'components/stocks/index'
 
 import './styles.css'
 
-const mapStateToProps = state => ({ stocks: state.stocks })
+const mapStateToProps = state => ({
+  stocks: state.stocks,
+  currentStock: state.currentStock
+})
 const actionCreators = Object.assign({}, actions)
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actionCreators, dispatch)
 })
 
-const Header = ({stocks, actions}) => {
+const Header = ({stocks, currentStock, actions}) => {
   return (
-    <div styleName='header'>
-      <span>Marketr</span>
-      <Stocks stocks={stocks} actions={actions} />
+    <div className='header'>
+      <a className='brand' href='/about'>
+        <p>Marketr</p>
+        <small>about</small>
+      </a>
+      <Stocks stocks={stocks} currentStock={currentStock} actions={actions} />
     </div>
   )
 }

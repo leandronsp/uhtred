@@ -1,11 +1,52 @@
 .header {
-  padding: 10px;
+  background-color: #337ab7;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+.header .brand {
+  float: left;
+  display: inline-block;
+  background-color: #337A94;
+  padding: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+}
+.header .brand p {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+.header .brand small {
+  font-size: 7px;
+  opacity: 0.5;
 }
 .header ul {
   margin: 0;
   padding: 0;
   display: inline-block;
+  float: left;
 }
 .header ul li {
   display: inline-block;
+  padding: 17px;
+}
+.header ul li a {
+  text-transform: uppercase;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  height: 100%;
+}
+.header ul li:not(.active) a:hover {
+  color: #333;
+}
+.header ul li.active {
+  background-color: #333;
 }

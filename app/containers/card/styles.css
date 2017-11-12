@@ -1,0 +1,42 @@
+.card {
+  background-color: rgba(51, 122, 183, 0.1);
+  border: 1px solid rgba(51, 122, 183, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.card ul {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+}
+.card ul li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+.card ul li.active a {
+  background-color: #337ab7;
+  color: #fff;
+}
+.card ul li a {
+  border-radius: 4px;
+  background-color: rgba(51, 122, 183, 0.1);
+  color: rgba(51, 122, 183, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  padding: 10px 15px;
+  display: block;
+}
+.card ul li:not(.active) a:hover {
+  background-color: rgba(51, 122, 183, 0.2)
+}
+.card ul li a small {
+  margin-left: 20px;
+  opacity: 0.8;
+  font-size: 13px;
+}

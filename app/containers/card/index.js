@@ -5,6 +5,7 @@ import * as seriesActions from 'actions/series'
 
 import Series from 'components/series/index'
 import Stock from 'components/stock/index'
+import './styles.css'
 
 const mapStateToProps = state => ({
   currentStock: state.currentStock,
@@ -20,7 +21,7 @@ const mapDispatchToProps = dispatch => ({
 
 const Card = ({series, currentStock, currentSerie, actions}) => {
   return (
-    <div>
+    <div className='card'>
       <Stock stock={currentStock} />
       <Series series={series} currentSerie={currentSerie} actions={actions} />
     </div>

@@ -7,6 +7,8 @@ import Capital from 'components/capital/index'
 import Card from 'containers/card/index'
 import CallOptions from 'components/callOptions/index'
 
+import './styles.css'
+
 const mapStateToProps = state => ({
   callOptions: state.callOptions,
   capital: state.capital
@@ -20,7 +22,7 @@ const mapDispatchToProps = dispatch => ({
 
 const Main = ({ callOptions, capital, actions }) => {
   return (
-    <div>
+    <div className='main'>
       <Capital capital={capital} actions={actions} />
       <Card />
       <CallOptions callOptions={callOptions} />
