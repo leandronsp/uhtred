@@ -1,14 +1,18 @@
 import React from 'react'
+import CurrencyInput from 'react-currency-input'
 import './styles.css'
 
 const Capital = ({capital, actions}) => {
-  const changeCapital = () => event => {
-    actions.changeCapital(event.target.value)
+  const changeCapital = () => (value, vnumber, event) => {
+    actions.changeCapital(vnumber)
   }
 
   return (
     <form autoComplete='off'>
-      <input
+      <CurrencyInput
+        decimalSeparator=','
+        thousandSeparator='.'
+        prefix='R$ '
         className='capital'
         type='text'
         id='capital'

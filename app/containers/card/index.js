@@ -22,7 +22,7 @@ const mapDispatchToProps = dispatch => ({
 const Card = ({series, currentStock, currentSerie, actions}) => {
   return (
     <div className='card'>
-      <Stock stock={currentStock} />
+      <Stock stock={currentStock} currentSerie={currentSerie} />
       <Series series={series} currentSerie={currentSerie} actions={actions} />
     </div>
   )
