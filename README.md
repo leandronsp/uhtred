@@ -23,7 +23,11 @@ Cutting Edge Stack (As of October 15th 2017')
 
 Screenshots
 -----------
-![Screen 2](screenshots/screen-2.png)
+![Screen 3](screenshots/screen-3.png)
+
+It's even possible to train your data from the UI:
+
+![Screen 4](screenshots/screen-4.png)
 
 Setup & Running locally
 --------

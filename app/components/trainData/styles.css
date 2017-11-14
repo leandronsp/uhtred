@@ -1,0 +1,18 @@
+.train-data {
+  border-radius: 4px;
+  background-color: #fff;
+  color: #337ab7;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2px 10px 0 10px;
+  padding: 10px 15px;
+  display: block;
+  border-style: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: 0;
+}
+.train-data:hover {
+  color: #fff;
+  background-color: #337ab7;
+}

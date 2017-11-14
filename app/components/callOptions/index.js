@@ -2,7 +2,7 @@ import React from 'react'
 import Moment from 'react-moment'
 import './styles.css'
 
-const CallOptions = ({ callOptions }) => {
+const CallOptions = ({ callOptions, actions }) => {
   return (
     <table className='callOptions'>
       <thead>
@@ -43,7 +43,14 @@ const CallOptions = ({ callOptions }) => {
               </td>
               <td className='rating'>{callOption.rating}</td>
               <td><Moment fromNow>{callOption.last_update}</Moment></td>
-              <td className='score'>{callOption.score}</td>
+              <td className='score'>
+                <input
+                  type='text'
+                  id='score'
+                  value={callOption.score}
+                  onChange={(event) => actions.changeScore(callOption, event.target.value)}
+                />
+              </td>
             </tr>
           )
         })}

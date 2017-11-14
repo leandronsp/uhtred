@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as capitalActions from 'actions/capital'
+import * as callOptionActions from 'actions/callOptions'
 
 import Capital from 'components/capital/index'
 import Card from 'containers/card/index'
@@ -14,7 +15,7 @@ const mapStateToProps = state => ({
   capital: state.capital
 })
 
-const actionCreators = Object.assign({}, capitalActions)
+const actionCreators = Object.assign({}, capitalActions, callOptionActions)
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(actionCreators, dispatch)
@@ -25,7 +26,7 @@ const Main = ({ callOptions, capital, actions }) => {
     <div className='main'>
       <Capital capital={capital} actions={actions} />
       <Card />
-      <CallOptions callOptions={callOptions} />
+      <CallOptions callOptions={callOptions} actions={actions} />
     </div>
   )
 }

@@ -6,6 +6,7 @@ import series from './series'
 import currentSerie from './currentSerie'
 import callOptions from './callOptions'
 import capital from './capital'
+import trainData from './trainData'
 
 const reducer = combineReducers({
   stocks,
@@ -13,7 +14,8 @@ const reducer = combineReducers({
   series,
   currentSerie,
   callOptions,
-  capital
+  capital,
+  trainData
 })
 
 export default reducer
