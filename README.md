@@ -40,16 +40,16 @@ Docker usage
 This app uses docker for containerization:
 
 	# builds the web app container
-	docker-compose build
+	docker-compose build web
 
 	# starts up and listens to http://localhost:8080
-	docker-compose up
+	docker-compose up web
 
 	# running commands inside web container
-	docker exec -it uhtred_web_1 bash -c "curl http://localhost:8080"
+	docker exec -it uhtred-web bash -c "curl http://localhost:8080"
 
 	# happy TDD!
-	docker-compose run tdd
+	docker-compose build tdd && docker-compose run tdd
 
 	# stop everything
 	docker-compose down
@@ -58,6 +58,20 @@ Testing
 --------
 	$ npm run tdd (jest --watch)
 	$ docker-compose run tdd
+
+Running under K8s
+----------
+This app provides capabilities for deployments  on K8s using Docker containers.
+
+	# creates pods and services
+	kubectl create -f k8s/k8s-app-pod.yml
+	kubectl create -f k8s/k8s-app-service.yml
+
+	# check dashboard using MiniKube
+	minikube dashboard
+
+	# print URL
+	minikube service uhtred-service --url
 
 License
 ------------

@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './app/app.js',
@@ -6,6 +7,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        API_HOST: JSON.stringify(process.env.API_HOST),
+        API_PORT: JSON.stringify(process.env.API_PORT)
+      }
+    })
+  ],
   module: {
     loaders: [
       {

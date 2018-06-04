@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uhtred-deployment
+  labels:
+    app: uhtred-pod
+spec:
+  selector:
+    matchLabels:
+      app: uhtred-pod
+  template:
+    metadata:
+      labels:
+        app: uhtred-pod
+    spec:
+      containers:
+        - name: uhtred-web
+          image: leandronsp/uhtred-web
+          ports:
+            - containerPort: 8080
+          env:
+            - name: API_HOST
+              value: "192.168.99.100"
+            - name: API_PORT
+              value: "30882"

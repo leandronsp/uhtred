@@ -4,10 +4,15 @@ services:
     build:
       dockerfile: ./app.dockerfile
       context: .
+    container_name: uhtred-web
+    image: leandronsp/uhtred-web
     ports:
       - "8080:8080"
+    environment:
+      - API_HOST=localhost
+      - API_PORT=4000
     command: >
-      bash -c "npm run server:dev"
+      bash -c "npm run build && npm run server:dev"
   tdd:
     build:
       dockerfile: ./app.dockerfile
