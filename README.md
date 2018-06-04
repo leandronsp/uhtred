@@ -35,9 +35,29 @@ Setup & Running locally
 	$ npm run build (webpack)
 	$ npm run server:dev (webpack-dev-server --inline --hot)
 
+Docker usage
+--------
+This app uses docker for containerization:
+
+	# builds the web app container
+	docker-compose build
+
+	# starts up and listens to http://localhost:8080
+	docker-compose up
+
+	# running commands inside web container
+	docker exec -it uhtred_web_1 bash -c "curl http://localhost:8080"
+
+	# happy TDD!
+	docker-compose run tdd
+
+	# stop everything
+	docker-compose down
+
 Testing
 --------
 	$ npm run tdd (jest --watch)
+	$ docker-compose run tdd
 
 License
 ------------

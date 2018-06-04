@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    build:
+      dockerfile: ./app.dockerfile
+      context: .
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "npm run server:dev"
+  tdd:
+    build:
+      dockerfile: ./app.dockerfile
+      context: .
+    volumes:
+      - "./app:/var/www/app"
+    command: >
+      bash -c "npm run tdd"
